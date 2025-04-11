@@ -16,6 +16,7 @@ import menu_icon from './menu_icon.png'
 import arrow_icon from './arrow_icon.png'
 import green_dot from './green_dot.png'
 
+
 const assets = {
     avatar_icon,
     gallery_icon,
