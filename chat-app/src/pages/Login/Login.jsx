@@ -1,12 +1,13 @@
-import React from 'react'
-import './Login.css'
+import React from 'react';
+import './Login.css';
+import assets from '../../assets/assets';
 
-function Login() {
+const Login = () => {
   return (
-    <div>
-      Login
+    <div className='login'>
+      <img src={assets.logo_big} alt="chat icon" className="logo" />
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
