@@ -7,3 +7,6 @@
     box-sizing: border-box;
     font-family: poppins;
 }
+img.dot{
+  width: 15px !important;
+}
