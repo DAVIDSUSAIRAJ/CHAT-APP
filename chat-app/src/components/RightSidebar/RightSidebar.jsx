@@ -25,6 +25,7 @@ const RightSidebar = () => {
           <img src={assets.pic2} alt="" />
         </div>
       </div>
+      <button>Logout</button>
     </div>
   )
 }
