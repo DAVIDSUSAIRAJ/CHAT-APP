@@ -1,20 +1,23 @@
-import React from 'react';
-import './Login.css';
-import assets from '../../assets/assets';
+import React, { useState } from "react";
+import "./Login.css";
+import assets from "../../assets/assets";
 
 const Login = () => {
+  const [currentSate, setCurrentState] = useState("Sign up");
   return (
-    <div className='login'>
+    <div className="login">
       <img src={assets.logo_big} alt="chat icon" className="logo" />
       <form className="login-form">
-        <h2>Sign Up</h2>
+        <h2>{currentSate}</h2>
 
-        <input
-          type="text"
-          placeholder="username"
-          className="form-input"
-          required
-        />
+        {currentSate === "Sign up" ? (
+          <input
+            type="text"
+            placeholder="username"
+            className="form-input"
+            required
+          />
+        ) : null}
 
         <input
           type="email"
@@ -30,7 +33,9 @@ const Login = () => {
           required
         />
 
-        <button type="submit">Sign Up</button>
+        <button type="submit">
+          {currentSate === "Sign up" ? "Create account" : "Login now"}
+        </button>
 
         <div className="login-term">
           <input type="checkbox" />
@@ -38,9 +43,17 @@ const Login = () => {
         </div>
 
         <div className="login-forgot">
-          <p className="login-toggle">
-            Already have an account <span>click here</span>
-          </p>
+          {currentSate === "Sign up" ? (
+            <p className="login-toggle">
+              Already have an account{" "}
+              <span onClick={() => setCurrentState("Login")}>login here</span>
+            </p>
+          ) : (
+            <p className="login-toggle">
+              Create an account{" "}
+              <span onClick={() => setCurrentState("Sign up")}>click here</span>
+            </p>
+          )}
         </div>
       </form>
     </div>

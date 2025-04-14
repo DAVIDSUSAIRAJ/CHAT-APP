@@ -56,3 +56,6 @@
   color: #077EFF;
   cursor: pointer;
 }
+.login-toggle span:hover {
+  text-decoration: underline;
+}
