@@ -1,7 +1,7 @@
 .ls {
     background: #001030;
     color: white;
-    height: 75vh;
+    height: 100vh;
   }
   
   .ls-top {
@@ -47,7 +47,7 @@
   .ls-list {
     display: flex;
     flex-direction: column;
-    height: calc(75vh - 140px); /* Adjust based on your header + search height */
+    height: calc(100vh - 140px); /* Adjust based on your header + search height */
     overflow-y: auto;
   }
   .ls-list::-webkit-scrollbar {
@@ -87,3 +87,33 @@
     color: white;
 }
 
+.ls-nav .menu {
+  position: relative;
+  padding: 10px 0px;
+}
+
+.menu .sub-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 130px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  display: none;
+}
+.sub-menu hr {
+  border: none;
+  height: 1px;
+  background: #a4a4a4;
+  margin: 8px 0px;
+}
+
+.sub-menu p {
+  cursor: pointer;
+  font-size: 14px;
+}
+.menu:hover .sub-menu {
+display: block;
+}
