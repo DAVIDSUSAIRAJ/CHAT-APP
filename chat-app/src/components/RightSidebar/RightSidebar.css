@@ -1,72 +1,103 @@
 .rs {
-    color: white;
-    background: #001030;
+    color: #333333;
+    background: #f1f5ff;
     position: relative;
     height: 100vh;
     overflow-y: scroll;
-  }
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    border-left: 1px solid #e5e7eb;
+}
+
+.rs::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari and Opera */
+}
   
-  .rs-profile {
+.rs-profile {
     padding-top: 60px;
     text-align: center;
     max-width: 70%;
     margin: auto;
-  }
+}
   
-  .rs-profile img {
+.rs-profile img {
     width: 110px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-  }
+}
   
-  .rs-profile h3 {
+.rs-profile h3 {
     margin: 5px 0px;
-  }
+}
   
-  .rs-profile p {
+.rs-profile p {
     font-size: 10px;
     opacity: 80%;
     font-weight: 300;
-  }
+    color: #6b7280;
+}
   
-  .rs hr {
-    border-color: #ffffff50;
+.rs hr {
+    border-color: #e5e7eb;
     margin: 15px 0px;
-  }
+}
   
-  .rs-media {
+.rs-media {
     padding: 0px 20px;
     font-size: 13px;
-  }
+    color: #333333;
+}
   
-  .rs-media div {
+.rs-media div {
     max-height: 180px;
     overflow-y: scroll;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
-    margin-top: 8px;
-  }
+    gap: 8px;
+    margin-top: 12px;
+    padding: 4px;
+    
+}
   
-  .rs-media div img {
-    width: 60px;
-    border-radius: 4px;
+.rs-media div::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari and Opera */
+}
+  
+.rs-media div img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
     cursor: pointer;
-  }
-  .rs button {
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.rs-media div img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.rs button {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: #077eff;
-    color: white;
-    border: none;
+    background: #077EFF;
+    color: #ffffff;
+    border: 1px solid #7e7f80;
     font-size: 12px;
     font-weight: 300;
     padding: 10px 65px;
     border-radius: 20px;
     cursor: pointer;
-  }
+    transition: all 0.2s ease;
+}
+  
+.rs button:hover {
+    background: #1686fd;
+}
   
   
   

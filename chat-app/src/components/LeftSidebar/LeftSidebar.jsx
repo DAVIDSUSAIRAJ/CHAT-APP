@@ -7,9 +7,9 @@ const LeftSidebar = () => {
     <div className="ls">
       <div className="ls-top">
         <div className="ls-nav">
-          <img src={assets.logo} className="logo" alt="logo" />
+          <img src={assets.chat} className="logo" alt="logo" />
           <div className="menu">
-              <img src={assets.menu_icon} alt="" />
+              <img src={assets.menu} alt="" />
               <div className="sub-menu">
                 <p>Edit Profile</p>
                 <hr />

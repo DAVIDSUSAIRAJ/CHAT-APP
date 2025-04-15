@@ -1,62 +1,64 @@
 .ls {
-    background: #001030;
-    color: white;
+    background: #f1f5ff;
+    color: #333333;
     height: 100vh;
-  }
+    border-right: 1px solid #e5e7eb;
+}
   
-  .ls-top {
+.ls-top {
     padding: 20px;
-  }
+}
   
-  .ls-nav {
+.ls-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
-  .ls-nav .logo {
+.ls-nav .logo {
     max-width: 140px;
-  }
-  .ls-nav .menu img {
+}
+.ls-nav .menu img {
     max-height: 20px;
     opacity: 0.6;
     cursor: pointer;
-  }
+}
 
-  .ls-search {
-    background-color: #002670;
+.ls-search {
+    background-color: #f3f4f6;
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px 12px;
     margin-top: 20px;
-  }
-  .ls-search img {
+    border-radius: 8px;
+}
+.ls-search img {
     width: 16px;
-  }
-  .ls-search input {
+}
+.ls-search input {
     background: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: #333333;
     font-size: 11px;
-  }
-  .ls-search input::placeholder {
-    color: #c8c8c8;
-  }
-  .ls-list {
+}
+.ls-search input::placeholder {
+    color: #6b7280;
+}
+.ls-list {
     display: flex;
     flex-direction: column;
     height: calc(100vh - 140px); /* Adjust based on your header + search height */
     overflow-y: auto;
-  }
-  .ls-list::-webkit-scrollbar {
+}
+.ls-list::-webkit-scrollbar {
     width: 6px;
-  }
-  .ls-list::-webkit-scrollbar-thumb {
+}
+.ls-list::-webkit-scrollbar-thumb {
     background-color: #555;
     border-radius: 3px;
-  }
+}
   
   
 .friends img{
@@ -64,27 +66,34 @@
     aspect-ratio: 1/1;
     border-radius: 50%;
 } 
- .friends{
+.friends{
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 13px;
+    border-radius: 8px;
+    margin: 2px 4px;
 }
 .friends div{
     display: flex;
     flex-direction: column;
 }
+.friends p {
+    color: #333333;
+    margin: 0;
+    font-weight: 500;
+}
 .friends span{
-   color: #9f9f9f;
+   color: #6b7280;
    font-size: 11px;
 }
 .friends:hover{
-    background-color: #077eff;
+    background-color: #f3f4f6;
 }
 .friends:hover span{
-    color: white;
+    color: #333333;
 }
 
 .ls-nav .menu {
@@ -99,20 +108,22 @@
   width: 130px;
   padding: 20px;
   border-radius: 5px;
-  background-color: white;
-  color: black;
+  background-color: #ffffff;
+  color: #333333;
   display: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 .sub-menu hr {
   border: none;
   height: 1px;
-  background: #a4a4a4;
+  background: #e5e7eb;
   margin: 8px 0px;
 }
 
 .sub-menu p {
   cursor: pointer;
   font-size: 14px;
+  color: #333333;
 }
 .menu:hover .sub-menu {
 display: block;
